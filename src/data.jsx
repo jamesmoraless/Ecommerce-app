@@ -2,16 +2,16 @@ export const sliderItems = [
     {
         id: 1,
         img: "https://i.ibb.co/gPHXWJr/home-page-model.png",
-        title: "St.Paddys!!",
-        desc: "Get 15% off St.Paddy's Day Merch",
-        bg: "#FFD2DD",
+        title: "St.Paddys Is Here!!",
+        desc: "Get 15% off St.Paddy's Day Merch Now",
+        bg: "#89CFF0",
     },
     {
         id: 2,
         img: "https://i.ibb.co/gPHXWJr/home-page-model.png",
         title:"Summer Time",
         desc: "Get 5% off Summer Merch",
-        bg: "#FFD2DD",
+        bg: "#D2FFCF",
     },
     {
         id: 3,
