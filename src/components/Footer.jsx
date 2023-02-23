@@ -1,11 +1,14 @@
 import styled from 'styled-components'
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
+import { mobile } from '../responsive';
 
 
 const Container = styled.div`
 display: flex;
 background-color: white;
+${mobile({flexDirection: "column"})}
+${mobile({backgroundColor: "lightgray"})}
 `;
 
 const Left = styled.div`
@@ -32,6 +35,7 @@ margin-right: 10px;
 const Center = styled.div`
 flex: 1;
 padding: 20px;
+${mobile({display: "none"})}
 `;
 const Title= styled.h3`
 margin-bottom: 25px;

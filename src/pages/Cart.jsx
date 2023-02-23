@@ -3,12 +3,14 @@ import Announcement from "../components/Announcement"
 import Footer from "../components/Footer"
 import Navbar from "../components/Navbar"
 import RemoveCircleIcon from '@mui/icons-material/RemoveCircle';
+import { mobile } from "../responsive";
 
 const Container = styled.div`
 
 `;
 const Wrapper = styled.div`
 padding: 20px;
+${mobile({padding: "10px"})}
 `;
 const Title = styled.h1`
 text-align: center;
@@ -31,6 +33,7 @@ color: ${props => props.type === "filled" && "white"}
 
 `;
 const TopTexts = styled.div`
+${mobile({display: "none"})}
 
 `;
 const TopText = styled.span`
@@ -43,6 +46,7 @@ margin: 0px 10px;
 const Bottom = styled.div`
 display: flex;
 justify-content: space-between;
+${mobile({flexDirection: "column"})}
 `;
 
 const Info = styled.div`
@@ -51,6 +55,7 @@ flex:3;
 const Product = styled.div`
 display:flex;
 justify-content: space-between;
+${mobile({flexDirection: "column"})}
 `;
 const ProdDetail = styled.div`
 flex: 2;
@@ -58,6 +63,7 @@ display: flex;
 `;
 const Image = styled.img`
 width: 200px;
+${mobile({width: "40%"})}
 
 `;
 const Details = styled.div`
@@ -84,6 +90,7 @@ const AmountContainer = styled.div`
 margin-bottom: 20px;
 align-items: center;
 display:flex;
+${mobile({margin: "10px 15px"})}
 `;
 const ProductPrice = styled.div`
 font-size: 30px;
